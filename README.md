@@ -48,7 +48,7 @@ This step shows the creation of the virtual machine and loading the Ubuntu Serve
 
 This step shows the installation of Ubuntu Server inside the virtual machine.
 
-![Installation](./Screen-2-Ubuntu-Installation/09-installing.png)
+![Installation](./09-installing.png)
 
 ---
 
