@@ -51,11 +51,13 @@ It covers system installation, initial configuration, network verification, secu
 ### 🖥️ Screen 1: VMware Setup
 
 Creation of the virtual machine and loading Ubuntu Server ISO.
+
 ![VM Setup](./linux-setup.png)
 
 ### 🖥️ Screen 2: Ubuntu Server Installation
 
 Installation of Ubuntu Server inside the virtual environment.
+
 ![Installation](./09-installing.png)
 
 ---
@@ -65,21 +67,25 @@ Installation of Ubuntu Server inside the virtual environment.
 ### 🖥️ Screen 3: First Login
 
 Accessing the system using configured credentials.
+
 ![Login](./01-login.png)
 
 ### 🖥️ Screen 4: System Update
 
 Updating system packages using apt.
+
 ![Update](./02-update.png)
 
 ### 🖥️ Screen 5: IP Address Check
 
 Verifying assigned IP address.
+
 ![IP](./03-ip.png)
 
 ### 🖥️ Screen 6: Internet Connectivity
 
 Testing connectivity using ping.
+
 ![Ping](./04-ping.png)
 
 ---
@@ -89,6 +95,7 @@ Testing connectivity using ping.
 ### 🖥️ Screen 7: SSH Connection
 
 Successful SSH connection from Windows to Linux server.
+
 ![SSH](./ssh-connection.png)
 
 ---
@@ -98,11 +105,13 @@ Successful SSH connection from Windows to Linux server.
 ### 🖥️ Screen 8: Apache Installation
 
 Installing Apache web server.
+
 ![Apache Install](./apache-install.png)
 
 ### 🖥️ Screen 9: Web Server Test
 
 Accessing web server via browser.
+
 ![Web](./web-test.png)
 
 ---
