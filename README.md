@@ -1,17 +1,17 @@
-# 🐧 Linux Server Lab (Infrastructure Setup)
+# 🐧 Linux Server Lab (Ubuntu Server Deployment & Administration)
 
 ## 📌 Project Overview
 
-This project demonstrates the deployment and configuration of a **Linux Server (Ubuntu Server)** in a virtual environment.
+This project simulates a real-world Linux server deployment in an enterprise environment using Ubuntu Server.
 
-It covers system installation, basic administration, network configuration, and remote access using SSH.
+It covers system installation, initial configuration, network verification, secure remote access (SSH), and web service deployment using Apache.
 
 ---
 
 ## 🧱 Lab Architecture
 
-* **Server:** Ubuntu Server
-* **Client:** Windows 10 (for SSH access)
+* **Server:** Ubuntu Server 22.04
+* **Client:** Windows 10 (SSH access)
 * **Environment:** VMware Workstation
 
 ---
@@ -19,145 +19,115 @@ It covers system installation, basic administration, network configuration, and 
 ## ⚙️ Technologies & Tools
 
 * Ubuntu Server
-* Linux Terminal
+* Linux CLI (Terminal)
 * OpenSSH
-* Apache Web Server (later)
+* Apache Web Server
 * VMware Workstation
+
+---
+
+## 🎯 Key Objectives
+
+* Deploy a Linux server environment
+* Configure system and networking
+* Enable secure remote access (SSH)
+* Install and test a web server
+
+---
+
+## 🎯 What I Did
+
+* Installed Ubuntu Server on a virtual machine
+* Configured system environment and networking
+* Verified IP address and connectivity
+* Enabled SSH for remote administration
+* Installed and configured Apache web server
+* Tested web service from client machine
 
 ---
 
 # 🔹 Part 1: Installation & Setup
 
-## 🎯 Objectives
-
-* Install Ubuntu Server
-* Configure system environment
-* Prepare server for administration
-
----
-
 ### 🖥️ Screen 1: VMware Setup
 
-This step shows the creation of the virtual machine and loading the Ubuntu Server ISO.
-
+Creation of the virtual machine and loading Ubuntu Server ISO.
 ![VM Setup](./linux-setup.png)
-
----
 
 ### 🖥️ Screen 2: Ubuntu Server Installation
 
-This step shows the installation of Ubuntu Server inside the virtual machine.
-
+Installation of Ubuntu Server inside the virtual environment.
 ![Installation](./09-installing.png)
 
 ---
 
-
 # 🔹 Part 2: Initial Configuration
-
-## 🎯 Objectives
-
-* Access the system
-* Update packages
-* Verify network connectivity
-
----
 
 ### 🖥️ Screen 3: First Login
 
-Login into the Linux server using created credentials.
-
+Accessing the system using configured credentials.
 ![Login](./01-login.png)
-
----
 
 ### 🖥️ Screen 4: System Update
 
 Updating system packages using apt.
-
 ![Update](./02-update.png)
-
----
 
 ### 🖥️ Screen 5: IP Address Check
 
 Verifying assigned IP address.
-
 ![IP](./03-ip.png)
-
----
 
 ### 🖥️ Screen 6: Internet Connectivity
 
 Testing connectivity using ping.
-
 ![Ping](./04-ping.png)
 
 ---
 
 # 🔹 Part 3: Remote Access (SSH)
 
-## 🎯 Objectives
-
-* Enable SSH access
-* Connect from Windows client
-
----
-
 ### 🖥️ Screen 7: SSH Connection
 
 Successful SSH connection from Windows to Linux server.
-
 ![SSH](./ssh-connection.png)
 
 ---
 
 # 🔹 Part 4: Web Server Deployment (Apache)
 
-## 🎯 Objectives
-
-* Install Apache
-* Deploy web service
-
----
-
 ### 🖥️ Screen 8: Apache Installation
 
 Installing Apache web server.
-
 ![Apache Install](./apache-install.png)
-
----
 
 ### 🖥️ Screen 9: Web Server Test
 
-Accessing web server from browser.
-
+Accessing web server via browser.
 ![Web](./web-test.png)
 
 ---
 
-# ✅ Key Achievements
+## ✅ Key Achievements
 
-* Installed and configured Ubuntu Server
-* Performed system updates and networking checks
-* Enabled SSH remote access
-* Deployed Apache web server
+* Successfully deployed a Linux server environment
+* Configured system updates and networking
+* Enabled secure SSH remote access
+* Deployed and tested Apache web server
 
 ---
 
-# 🎯 Skills Demonstrated
+## 🛠️ Skills Demonstrated
 
 * Linux System Administration
 * SSH Remote Management
-* Network Configuration
-* Web Server Deployment
+* Network Configuration & Troubleshooting
+* Web Server Deployment (Apache)
 * Virtualization (VMware)
 
 ---
 
-# 📌 Conclusion
+## 📌 Conclusion
 
-This project demonstrates the deployment of a **Linux server environment** from installation to service configuration.
+This project demonstrates a complete Linux server deployment workflow, from installation to service configuration.
 
-It provides a strong foundation in Linux system administration and real-world server management.
+It reflects practical skills in system administration, networking, and server management in a real-world scenario.
