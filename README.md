@@ -40,7 +40,7 @@ It covers system installation, basic administration, network configuration, and 
 
 This step shows the creation of the virtual machine and loading the Ubuntu Server ISO.
 
-![VM Setup](./Screen-1-VMware/linux-setup.png)
+![VM Setup](./linux-setup.png)
 
 ---
 
@@ -67,7 +67,7 @@ This step shows the installation of Ubuntu Server inside the virtual machine.
 
 Login into the Linux server using created credentials.
 
-![Login](./Screen-3-Linux-Configuration/01-login.png)
+![Login](./01-login.png)
 
 ---
 
@@ -75,7 +75,7 @@ Login into the Linux server using created credentials.
 
 Updating system packages using apt.
 
-![Update](./Screen-3-Linux-Configuration/02-update.png)
+![Update](./02-update.png)
 
 ---
 
@@ -83,7 +83,7 @@ Updating system packages using apt.
 
 Verifying assigned IP address.
 
-![IP](./Screen-3-Linux-Configuration/03-ip.png)
+![IP](./03-ip.png)
 
 ---
 
@@ -91,7 +91,7 @@ Verifying assigned IP address.
 
 Testing connectivity using ping.
 
-![Ping](./Screen-3-Linux-Configuration/04-ping.png)
+![Ping](./04-ping.png)
 
 ---
 
@@ -108,7 +108,7 @@ Testing connectivity using ping.
 
 Successful SSH connection from Windows to Linux server.
 
-![SSH](./Screen-4-SSH/ssh-connection.png)
+![SSH](./ssh-connection.png)
 
 ---
 
@@ -125,7 +125,7 @@ Successful SSH connection from Windows to Linux server.
 
 Installing Apache web server.
 
-![Apache Install](./Screen-5-Apache/apache-install.png)
+![Apache Install](./apache-install.png)
 
 ---
 
@@ -133,7 +133,7 @@ Installing Apache web server.
 
 Accessing web server from browser.
 
-![Web](./Screen-5-Apache/web-test.png)
+![Web](./web-test.png)
 
 ---
 
