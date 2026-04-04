@@ -1,116 +1,129 @@
-# 🐧 Linux Server Lab (Ubuntu Server Deployment & Administration)
+# 🐧 Linux Server Lab — Ubuntu Server Deployment & Administration
 
-## 📌 Project Overview
+> **Ubuntu Server 22.04 · Linux CLI · OpenSSH · Apache · VMware · Network Administration**
 
-This project simulates a real-world Linux server deployment in an enterprise environment using Ubuntu Server.
+![Status](https://img.shields.io/badge/Status-Completed-2ea44f?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Ubuntu%20Server%2022.04-E95420?style=flat-square&logo=ubuntu)
+![Tool](https://img.shields.io/badge/Virtualization-VMware%20Workstation-607078?style=flat-square)
+![Type](https://img.shields.io/badge/Lab-Linux%20Server%20Simulation-orange?style=flat-square)
 
-It covers system installation, initial configuration, network verification, secure remote access (SSH), and web service deployment using Apache.
+---
+
+## 📌 Overview
+
+This project demonstrates a **complete Linux server deployment workflow** in a virtualized enterprise environment.
+
+It covers the full pipeline from OS installation to production-ready services: system configuration, network verification, secure SSH remote access, and Apache web server deployment — directly applicable to **Linux Administrator**, **IT Support**, and **Junior Sysadmin** roles.
 
 ---
 
 ## 🧱 Lab Architecture
 
-* **Server:** Ubuntu Server 22.04
-* **Client:** Windows 10 (SSH access)
-* **Environment:** VMware Workstation
+| Component | Details |
+|---|---|
+| Server | Ubuntu Server 22.04 LTS |
+| Client | Windows 10 (SSH access) |
+| Virtualization | VMware Workstation |
+| Remote Access | OpenSSH |
+| Web Service | Apache HTTP Server |
 
 ---
 
 ## ⚙️ Technologies & Tools
 
-* Ubuntu Server
-* Linux CLI (Terminal)
-* OpenSSH
-* Apache Web Server
-* VMware Workstation
+`Ubuntu Server 22.04` · `Linux CLI (Bash)` · `OpenSSH` · `Apache Web Server` · `apt` · `VMware Workstation` · `Network Configuration` · `ping` · `ip addr`
 
 ---
 
-## 🎯 Key Objectives
+## 🗂️ Project Structure
 
-* Deploy a Linux server environment
-* Configure system and networking
-* Enable secure remote access (SSH)
-* Install and test a web server
-
----
-
-## 🎯 What I Did
-
-* Installed Ubuntu Server on a virtual machine
-* Configured system environment and networking
-* Verified IP address and connectivity
-* Enabled SSH for remote administration
-* Installed and configured Apache web server
-* Tested web service from client machine
+```
+Lab
+├── Part 1 — VM Setup & Ubuntu Server Installation
+├── Part 2 — Initial System Configuration & Networking
+├── Part 3 — Remote Access via SSH
+└── Part 4 — Apache Web Server Deployment & Testing
+```
 
 ---
 
-# 🔹 Part 1: Installation & Setup
+## 🔹 Part 1 — Installation & Setup
 
-### 🖥️ Screen 1: VMware Setup
+Created a virtual machine in VMware Workstation, loaded Ubuntu Server 22.04 ISO, and completed the full OS installation.
 
-Creation of the virtual machine and loading Ubuntu Server ISO.
+> 📸 **Screen 1** — VMware VM creation and ISO loading
 
 ![VM Setup](./linux-setup.png)
 
-### 🖥️ Screen 2: Ubuntu Server Installation
-
-Installation of Ubuntu Server inside the virtual environment.
+> 📸 **Screen 2** — Ubuntu Server installation in progress
 
 ![Installation](./09-installing.png)
 
 ---
 
-# 🔹 Part 2: Initial Configuration
+## 🔹 Part 2 — Initial Configuration
 
-### 🖥️ Screen 3: First Login
+Performed all post-installation steps to prepare the server for production use:
 
-Accessing the system using configured credentials.
+| Step | Command / Action | Result |
+|---|---|---|
+| First login | Credential authentication | ✅ Access granted |
+| System update | `sudo apt update && apt upgrade` | ✅ Packages updated |
+| IP address check | `ip addr` | ✅ IP assigned |
+| Connectivity test | `ping 8.8.8.8` | ✅ Internet reachable |
+
+> 📸 **Screen 3** — First login to Ubuntu Server
 
 ![Login](./01-login.png)
 
-### 🖥️ Screen 4: System Update
-
-Updating system packages using apt.
+> 📸 **Screen 4** — System packages updated via apt
 
 ![Update](./02-update.png)
 
-### 🖥️ Screen 5: IP Address Check
-
-Verifying assigned IP address.
+> 📸 **Screen 5** — IP address verified
 
 ![IP](./03-ip.png)
 
-### 🖥️ Screen 6: Internet Connectivity
-
-Testing connectivity using ping.
+> 📸 **Screen 6** — Internet connectivity confirmed via ping
 
 ![Ping](./04-ping.png)
 
 ---
 
-# 🔹 Part 3: Remote Access (SSH)
+## 🔹 Part 3 — Remote Access (SSH)
 
-### 🖥️ Screen 7: SSH Connection
+Enabled and tested **secure remote administration** from a Windows 10 client to the Ubuntu Server over SSH.
 
-Successful SSH connection from Windows to Linux server.
+- Protocol: OpenSSH
+- Direction: Windows 10 → Ubuntu Server
+- Result: ✅ Successful remote session established
+
+> 📸 **Screen 7** — SSH connection from Windows client to Linux server
 
 ![SSH](./ssh-connection.png)
 
 ---
 
-# 🔹 Part 4: Web Server Deployment (Apache)
+## 🔹 Part 4 — Web Server Deployment (Apache)
 
-### 🖥️ Screen 8: Apache Installation
+Installed and configured Apache HTTP Server, then validated the service from a remote browser:
 
-Installing Apache web server.
+```bash
+sudo apt install apache2
+sudo systemctl enable apache2
+sudo systemctl start apache2
+```
+
+| Test | Result |
+|---|---|
+| Apache service status | ✅ Active & running |
+| Web access from browser | ✅ Default page loaded |
+
+> 📸 **Screen 8** — Apache installation via apt
 
 ![Apache Install](./apache-install.png)
 
-### 🖥️ Screen 9: Web Server Test
-
-Accessing web server via browser.
+> 📸 **Screen 9** — Web server default page accessed from client browser
 
 ![Web](./web-test.png)
 
@@ -118,25 +131,34 @@ Accessing web server via browser.
 
 ## ✅ Key Achievements
 
-* Successfully deployed a Linux server environment
-* Configured system updates and networking
-* Enabled secure SSH remote access
-* Deployed and tested Apache web server
+- Deployed a **Ubuntu Server 22.04** environment from scratch in VMware
+- Performed complete **post-installation configuration** (updates, networking)
+- Enabled and validated **SSH remote access** from a Windows client
+- Installed and tested a fully operational **Apache web server**
+- Verified **end-to-end connectivity** at each stage of deployment
 
 ---
 
-## 🛠️ Skills Demonstrated
+## 🎯 Skills Demonstrated
 
-* Linux System Administration
-* SSH Remote Management
-* Network Configuration & Troubleshooting
-* Web Server Deployment (Apache)
-* Virtualization (VMware)
+| Category | Skills |
+|---|---|
+| Linux Administration | Ubuntu Server, Bash CLI, apt, systemctl |
+| Remote Management | OpenSSH, client-server authentication |
+| Web Services | Apache HTTP Server, service management |
+| Networking | IP configuration, DNS, ping, connectivity testing |
+| Virtualization | VMware Workstation, VM provisioning |
 
 ---
 
-## 📌 Conclusion
+## 💼 Target Roles
 
-This project demonstrates a complete Linux server deployment workflow, from installation to service configuration.
+This project directly demonstrates skills required for:
 
-It reflects practical skills in system administration, networking, and server management in a real-world scenario.
+- **Linux System Administrator**
+- **IT Support Technician**
+- **Junior DevOps / Sysadmin**
+
+---
+
+*Lab built in an isolated VMware environment — all configurations documented with screenshots and test results.*
